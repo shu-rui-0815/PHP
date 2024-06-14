@@ -1,0 +1,58 @@
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.movie {
+    background: #f4f4f4;
+    margin: 10px 0;             /*每個框框間距*/
+    padding: 10px;              /*圖片與框框間距*/
+    border: 1px solid #ccc;   /*框框的邊框*/
+    border-radius: 8px;         /*框框圓角程度*/
+}
+
+.movie img {
+    float: left;
+    margin-right: 10px;     /*右邊間距*/
+    border-radius: 8px;     /*超可愛框框圓角*/
+    margin-left: 10px;      /*左邊間距*/
+}
+
+.movie h2 { 
+    margin: 0 0 15px;
+    font-size: 22px;
+}
+
+.movie p {
+    margin-top:5px;
+}
+
+.scene1{
+    h1 {
+        font-size: 50px;
+        color: transparent;
+        -webkit-text-stroke-width: 2px;               /*字體邊框寬度*/
+        -webkit-text-stroke-color: rgb(255, 0, 0);           /*邊框顏色*/
+        font-family: '新細明體', cursive;              /*cursive手寫體*/
+    }
+  }
+
+  @media (max-width: 480px) {
+    .container {
+        width: 100%; /* 小屏幕上全寬顯示 */
+        padding: 0 10px;
+    }
+
+    .movie {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .movie img {
+        float: none;
+        margin: 0 0 10px 0;
+    }
+}

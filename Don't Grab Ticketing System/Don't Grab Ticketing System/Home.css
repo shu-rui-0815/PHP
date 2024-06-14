@@ -1,0 +1,34 @@
+.menu{
+    background-color:#000000;
+    float: left;
+    width: 100%;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    position:relative;
+    margin: 0ch;
+ }
+
+.nav{
+     display: flex;
+     text-align: center;
+     justify-content: center;
+     justify-content: space-around;
+     /* position: relative; */
+ }
+
+ /*.title{
+    margin: auto;
+    width: 200px;
+    height:50px;
+    border: 20px solid; 
+    border-radius: 15px; 
+    background-color: 	#000000
+ }*/
+
+a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;  /*移除<a>格式：底線*/
+} 
+
+/*CSS：將檔案內容與其顯示分開，簡化HTML檔案，CSS檔案中只包含樣式資訊*/
