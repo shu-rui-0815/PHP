@@ -8,12 +8,6 @@
 </head>
     
 <body>
-    <?php
-    /*
-        header("Refresh:1");
-        date_default_timezone_set("Asia/Taipei");
-        echo date("Y/m/d h:i:s");
-    */
     if($_SESSION["check"]=="Yes"){
         if(isset($_COOKIE["userName"])){
             echo $_COOKIE["userName"]."歡迎回來!!<br/>";
