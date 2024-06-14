@@ -7,9 +7,7 @@
     $uPwd="1234567890";
 
     $uName=$_GET["uName"];  //_get時前面就要用 method="get"，_post時前面就要用 method="post"
-    echo "帳號：" .$uName. "<br/>";
     $uPSW=$_GET["uPSW"];
-    echo "密碼：" .$uPSW. "<br/>";
 
     if($uId==$uName && $uPwd==$uPSW){
         $_SESSION["check"] = "Yes";
