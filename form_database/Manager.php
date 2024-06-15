@@ -19,12 +19,23 @@ $result = mysqli_query($link, $SQL);
 echo "<br/>";
 //結果轉陣列轉表格
 echo "<table border='1'>";
+echo "<tr>";
+    echo "<th>No</th>";
+    echo "<th>姓名</th>";
+    echo "<th>學號</th>";
+    echo "<th>系級</th>";
+    echo "<th>性別</th>";
+    echo "<th>參與人數</th>";
+    echo "<th>刪除</th>";
+echo "</tr>";
 while($row = mysqli_fetch_assoc($result)){  
     echo "<tr>";
         echo "<td>".$row["No"]."</td>";
         echo "<td>".$row["Name"]."</td>";
-        echo "<td>".$row["Password"]."</td>";
-        echo "<td>".$row["Role"]."</td>";
+        echo "<td>".$row["ID"]."</td>";
+        echo "<td>".$row["Department"]."</td>";
+        echo "<td>".$row["Gender"]."</td>";
+        echo "<td>".$row["Participants"]."</td>";
         echo "<td><a href='del.php?No=".$row["No"]."'>刪除</a></td>";
         //參數前面要加?
     echo "</tr>";
