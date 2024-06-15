@@ -10,6 +10,8 @@ if (!$link) {
     echo "資料庫開啟成功!<br>";
 }
 
+echo "<a href='add.php'>點我可新增資料</a><br><br>";
+
 //SQL指令
 $SQL = "SELECT * FROM user";
 
